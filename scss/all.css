@@ -998,7 +998,7 @@ body {
 }
 
 .banner {
-  background: url(../../img/home-header.png) no-repeat;
+  background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true) no-repeat;
   height: 787px;
   background-size: cover;
   background-position: center;
@@ -1006,7 +1006,7 @@ body {
 
 @media (max-width: 768px) {
   .banner {
-    background: url(../../img/home-header-sm.png) no-repeat;
+    background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true) no-repeat;
     background-size: cover;
     background-position: center;
     height: 369px;
@@ -1073,21 +1073,21 @@ body {
 }
 
 .design {
-  background: url(../../img/index-bg.png) no-repeat;
+  background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true) no-repeat;
   background-size: cover;
   background-position: center;
   height: 608px;
 }
 
 .design-banner {
-  background: url(../../img/home-section4-1.png) no-repeat;
+  background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-1.png?raw=true) no-repeat;
   background-size: cover;
   background-position: center;
   height: 240px;
 }
 
 .design-hero {
-  background: url(../../img/home-section4-2.png);
+  background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-2.png?raw=true);
   background-size: cover;
   background-position: center;
   height: 240px;
@@ -1095,7 +1095,7 @@ body {
 
 @media (max-width: 992px) {
   .design {
-    background: url(../../img/index-bg-md.png) no-repeat;
+    background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-md.png?raw=true) no-repeat;
     background-size: cover;
     background-position: center;
     height: 960px;
@@ -1104,18 +1104,18 @@ body {
 
 @media (max-width: 768px) {
   .design {
-    background: url(../../img/index-bg-sm.png) no-repeat;
+    background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-sm.png?raw=true) no-repeat;
     background-size: cover;
     background-position: center;
     height: 820px;
   }
   .design-banner {
-    background: url(../../img/home-section4-1-sm.png) no-repeat;
+    background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-1-sm.png?raw=true) no-repeat;
     background-size: cover;
     background-position: center;
   }
   .design-hero {
-    background: url(../../img/home-section4-2-sm.png) no-repeat;
+    background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-2-sm.png?raw=true) no-repeat;
     background-size: cover;
     background-position: center;
   }
@@ -1143,22 +1143,22 @@ body {
   }
 }
 
-.optical-banner {
-  background: url(../../img/product-header-1.png) no-repeat, url(../../img/product-header-2.png) no-repeat;
+.product-banner {
+  background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-1.png?raw=true) no-repeat, url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-2.png?raw=true) no-repeat;
   height: 296px;
   background-size: 50% 100%, 50% 100%;
   background-position: left top, right top;
 }
 
-.optical-hero {
-  background: url(../../img/product-header-3.png) no-repeat, url(../../img/product-header-4.png) no-repeat;
+.product-hero {
+  background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-3.png?raw=true) no-repeat, url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-4.png?raw=true) no-repeat;
   height: 296px;
   background-size: 50% 100%, 50% 100%;
   background-position: left top, right top;
 }
 
 @media (max-width: 768px) {
-  .optical-banner, .optical-hero {
+  .product-banner, .product-hero {
     height: 136px;
   }
 }

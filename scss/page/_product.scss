@@ -1,21 +1,17 @@
-.optical {
+.product {
 
     &-banner {
-        background: url(../../img/product-header-1.png) no-repeat, url(../../img/product-header-2.png) no-repeat;
+        background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-1.png?raw=true) no-repeat, url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-2.png?raw=true) no-repeat;
         height: 296px;
         @include banner-size(50%, 100%, 50%, 100%);
-        // background-size: 50% 100%, 50% 100%;
         @include banner-pos(left, top, right, top);
-        // background-position: left top, right top;
     }
 
     &-hero {
-        background: url(../../img/product-header-3.png) no-repeat, url(../../img/product-header-4.png) no-repeat;
+        background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-3.png?raw=true) no-repeat, url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-4.png?raw=true) no-repeat;
         height: 296px;
         @include banner-size(50%, 100%, 50%, 100%);
-        // background-size: 50% 100%, 50% 100%;
         @include banner-pos(left, top, right, top);
-        // background-position: left top, right top;
     }
 
     @include mobile {

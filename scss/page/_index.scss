@@ -1,10 +1,10 @@
 .banner {
-    background: url(../../img/home-header.png) no-repeat;
+    background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true) no-repeat;
     height: 787px;
     @include banner (cover, center);
 
     @include mobile {
-        background: url(../../img/home-header-sm.png) no-repeat;
+        background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true) no-repeat;
         @include banner (cover, center);
         height: 369px;
     }
@@ -70,40 +70,40 @@
 }
 
 .design {
-    background: url(../../img/index-bg.png) no-repeat;
+    background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true) no-repeat;
     @include banner(cover, center);
     height: 608px;
 
     &-banner {
-        background: url(../../img/home-section4-1.png) no-repeat;
+        background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-1.png?raw=true) no-repeat;
         @include banner(cover, center);
         height: 240px;
     }
 
     &-hero {
-        background: url(../../img/home-section4-2.png);
+        background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-2.png?raw=true);
         @include banner(cover, center);
         height: 240px;
     }
 
     @include pad {
-        background: url(../../img/index-bg-md.png) no-repeat;
+        background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-md.png?raw=true) no-repeat;
         @include banner(cover, center);
         height: 960px;
     }
 
     @include mobile {
-        background: url(../../img/index-bg-sm.png) no-repeat;
+        background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-sm.png?raw=true) no-repeat;
         @include banner(cover, center);
         height: 820px;
 
         &-banner {
-            background: url(../../img/home-section4-1-sm.png) no-repeat;
+            background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-1-sm.png?raw=true) no-repeat;
             @include banner(cover, center);
         }
 
         &-hero {
-            background: url(../../img/home-section4-2-sm.png) no-repeat;
+            background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-2-sm.png?raw=true) no-repeat;
             @include banner(cover, center);
         }
     }
