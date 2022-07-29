@@ -1,0 +1,78 @@
+$primary:#650300; //深紅文字
+$secondary:#AA0601; //背景色
+$success:#FBF2F2; //背景粉
+$gray:#00000029; //陰影
+$gray100:#707070;
+$gray200:#DCDCDC;
+$gray300:#555555; //page-link,blog-text
+$gray400:#CED4DA; //select
+$gray500:#00000020; //store
+$gray600:#212529; //store-text
+$gray700:#F2F2F2; //pagelast color
+$light:#707070; //project-border-bottom
+$brown:#5F3E2D; //product-color
+$buff:#B75929; //product-color
+$white:#fff;
+$block:#000;
+
+$font-base:8px;
+$space-base:4px;
+$gutter:12px;
+
+$bg-color:('primary':$primary,
+    'secondary':$secondary,
+    'success':$success,
+    'white':$white,
+    'block': $block,
+    'muted':$gray100,
+    'lightmuted':$gray600,
+    'gray':$gray300,
+);
+
+//文字大小
+$title:('1':$font-base*8, //64
+    '2':$font-base*6, //48
+    '3':$font-base*5.25, //42
+    '4':$font-base*4.5, //36
+    '5':$font-base*4, //32
+);
+
+$font:('s':$font-base*1.75, //14
+    'm':$font-base*2, //16
+    'l':$font-base*2.25, //18
+    'xl':$font-base*2.5, //20
+    'xxl':$font-base*3, //24
+);
+//space
+$mb-space:('1':$space-base, //4
+    '2':$space-base*2, //8
+    '3':$space-base*4, //16
+    '4':$space-base*6, //24
+    '5':$space-base*8, //32
+    '6':$space-base*10, //40
+    '7':$space-base*12, //48
+    '8':$space-base*15, //60
+    '9':$space-base*18, //72
+    '10':$space-base*20, //80
+    '11':$space-base*31, //124
+);
+$mb-md-space:('1':$space-base, //4
+    '2':$space-base*2, //16
+    '3':$space-base*4, //16
+    '4':$space-base*6, //24
+    '5':$space-base*10, //40
+    '6':$space-base*20, //80
+);
+$ms-space:('1':$space-base*2, //8
+    '2':$space-base*4, //16
+    '3':$space-base*6, //24
+    '4':$space-base*8, //32
+    '5':$space-base*12, //48
+    '6':$space-base*16, //64
+);
+$mb-sm-space:('1':$space-base, //4
+    '2':$space-base*2, //8
+    '3':$space-base*4, //16
+    '4':$space-base*6, //24
+    '5':$space-base*16, //64
+);

@@ -1,0 +1,71 @@
+.store {
+    display: flex;
+    flex-wrap: wrap;
+    @include margin-space(-12px);
+
+    &-itemOdd {
+        max-width: 33.3333333%;
+        @include padding-space(12px);
+    }
+
+    &-branch {
+        display: flex;
+        flex-wrap: wrap;
+        @include margin-space(-12px);
+    }
+
+    &-item {
+        max-width: 40%;
+        @include padding-space(12px);
+    }
+
+    &-map {
+        max-width: 60%;
+        height: auto;
+        @include padding-space(12px);
+    }
+
+    @include pad {
+        &-itemOdd {
+            max-width: 50%;
+        }
+
+        &-item {
+            max-width: 100%;
+            @include margin-space(-12px);
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        &-img,
+        &-text {
+            max-width: 50%;
+            @include padding-space(12px);
+        }
+
+        &-map {
+            max-width: 100%;
+            height: 414px;
+        }
+    }
+
+    @include mobile {
+        &-itemOdd {
+            max-width: 100%;
+        }
+
+        &-item {
+            @include margin-space(0px)
+        }
+
+        &-img,
+        &-text {
+            max-width: 100%;
+            @include padding-space(0px);
+        }
+
+        &-map {
+            height: 208px;
+        }
+    }
+}

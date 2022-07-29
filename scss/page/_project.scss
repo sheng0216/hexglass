@@ -1,0 +1,32 @@
+.project {
+    @include margin-space(-12px);
+
+    &-main {
+        max-width: 65%;
+        @include padding-space(12px);
+    }
+
+    &-tag {
+        max-width: 35%;
+        @include padding-space(12px);
+    }
+
+    @include pad {
+        &-main {
+            max-width: 75%;
+        }
+
+        &-tag {
+            max-width: 25%;
+        }
+    }
+
+    @include mobile {
+        @include margin-space(0px);
+
+        &-main {
+            max-width: 100%;
+            @include padding-space(0px);
+        }
+    }
+}

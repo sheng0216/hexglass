@@ -1,0 +1,24 @@
+.blogNav {
+    &-link {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+}
+
+.blog {
+    @include margin-space(-12xp);
+
+    &-itemEven {
+        max-width: 50%;
+        @include padding-space(12px);
+    }
+
+    @include mobile {
+        @include margin-space(0px);
+
+        &-itemEven {
+            max-width: 100%;
+            @include padding-space(0px);
+        }
+    }
+}

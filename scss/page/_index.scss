@@ -1,0 +1,134 @@
+.banner {
+    background: url(../../img/home-header.png) no-repeat;
+    height: 787px;
+    @include banner (cover, center);
+
+    @include mobile {
+        background: url(../../img/home-header-sm.png) no-repeat;
+        @include banner (cover, center);
+        height: 369px;
+    }
+}
+
+.specialized {
+    @include margin-space(-12px);
+
+    &-item {
+        max-width: 25%;
+        @include padding-space(12px);
+    }
+
+    &-img {
+        max-width: 100px;
+    }
+}
+
+@include pad {
+    .specialized {
+        &-item {
+            max-width: 50%;
+        }
+    }
+}
+
+@include mobile {
+    .specialized {
+        &-item {
+            max-width: 100%;
+        }
+    }
+}
+
+.classic {
+    @include margin-space(-12px);
+
+    &-item {
+        max-width: 33.333333%;
+        @include padding-space(12px);
+    }
+
+
+}
+
+@include pad {
+    .classic {
+        flex-direction: column;
+        align-items: center;
+
+        &-item {
+            max-width: 50%;
+        }
+    }
+}
+
+@include mobile {
+    .classic {
+        &-item {
+            max-width: 100%;
+        }
+    }
+}
+
+.design {
+    background: url(../../img/index-bg.png) no-repeat;
+    @include banner(cover, center);
+    height: 608px;
+
+    &-banner {
+        background: url(../../img/home-section4-1.png) no-repeat;
+        @include banner(cover, center);
+        height: 240px;
+    }
+
+    &-hero {
+        background: url(../../img/home-section4-2.png);
+        @include banner(cover, center);
+        height: 240px;
+    }
+
+    @include pad {
+        background: url(../../img/index-bg-md.png) no-repeat;
+        @include banner(cover, center);
+        height: 960px;
+    }
+
+    @include mobile {
+        background: url(../../img/index-bg-sm.png) no-repeat;
+        @include banner(cover, center);
+        height: 820px;
+
+        &-banner {
+            background: url(../../img/home-section4-1-sm.png) no-repeat;
+            @include banner(cover, center);
+        }
+
+        &-hero {
+            background: url(../../img/home-section4-2-sm.png) no-repeat;
+            @include banner(cover, center);
+        }
+    }
+}
+
+.comment {
+    justify-content: space-between;
+
+    &-item {
+        max-width: calc(25% - 24px);
+    }
+}
+
+@include pad {
+    .comment {
+        &-item {
+            max-width: calc(50% - 12px);
+        }
+    }
+}
+
+@include mobile {
+    .comment {
+        &-item {
+            max-width: 100%;
+        }
+    }
+}

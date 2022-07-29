@@ -1,0 +1,41 @@
+@mixin hide-text {
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+@mixin banner ($size, $position) {
+    background-size: $size;
+    background-position: $position;
+}
+
+@mixin banner-size($w1, $h1, $w2, $h2) {
+    background-size: $w1 $h1, $w2 $h2;
+}
+
+@mixin banner-pos($RL, $UD, $rl, $ud) {
+    background-position: $RL $UD, $rl $ud;
+}
+
+@mixin margin-space($size) {
+    margin-right: $size;
+    margin-left: $size;
+}
+
+@mixin padding-space($size) {
+    padding-right: $size;
+    padding-left: $size;
+}
+
+
+@mixin pad {
+    @media (max-width:992px) {
+        @content
+    }
+}
+
+@mixin mobile {
+    @media (max-width:768px) {
+        @content
+    }
+}

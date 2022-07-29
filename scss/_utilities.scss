@@ -1,0 +1,330 @@
+@each $key,
+$value in $bg-color {
+    .bg-#{$key} {
+        background: $value;
+    }
+}
+
+@each $key,
+$value in $bg-color {
+    .text-#{$key} {
+        color: $value;
+    }
+}
+
+@each $key,
+$value in $title {
+    .h#{$key} {
+        font-size: $value;
+    }
+}
+
+@each $key,
+$value in $font {
+    .font-#{$key} {
+        font-size: $value;
+    }
+}
+
+@include pad {
+    .font-md-s {
+        font-size: $font-base*2; //16
+    }
+
+    .font-md-m {
+        font-size: $font-base*3; //24
+    }
+
+    .font-md-l {
+        font-size: $font-base*5; //40
+    }
+}
+
+@include mobile {
+    .font-sm-s {
+        font-size: $font-base*2; //16
+    }
+
+    .font-sm-m {
+        font-size: $font-base*3; //24
+    }
+}
+
+//文字設定
+.fw-1 {
+    font-weight: 400;
+}
+
+.fw-2 {
+    font-weight: 500;
+}
+
+.fw-3 {
+    font-weight: 700;
+}
+
+.fw-4 {
+    font-weight: 900;
+}
+
+.font-italic {
+    font-style: italic;
+}
+
+.font-sans {
+    font-family: "Noto Sans TC";
+}
+
+.font-Roboto {
+    font-family: 'Roboto';
+}
+
+.align-middle {
+    vertical-align: middle;
+}
+
+.text-end {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-start {
+    text-align-last: left;
+}
+
+//間距
+@each $key,
+$value in $mb-space {
+    .mb-#{$key} {
+        margin-bottom: $value;
+    }
+}
+
+@each $key,
+$value in $ms-space {
+    .ms-#{$key} {
+        margin-left: $value;
+    }
+}
+
+.p-1 {
+    padding: $space-base*4; //16px
+}
+
+.py-1 {
+    padding-top: $space-base*2; //8
+    padding-bottom: $space-base*2; //8
+}
+
+.py-2 {
+    padding-top: $space-base*4; //16
+    padding-bottom: $space-base*4; //16
+}
+
+.py-3 {
+    padding-top: $space-base*6; //24
+    padding-bottom: $space-base*6; //24
+}
+
+.py-4 {
+    padding-top: $space-base*20; //80
+    padding-bottom: $space-base*20; //80
+}
+
+
+.px-1 {
+    padding-right: $space-base*6; //24
+    padding-left: $space-base*6; //24
+}
+
+.pt-1 {
+    padding-top: $space-base*6; //24
+}
+
+.pt-2 {
+    padding-top: $space-base*12; //48
+}
+
+.pt-3 {
+    padding-top: $space-base*24; //96
+}
+
+.pb-1 {
+    padding-bottom: $space-base*8; //32
+}
+
+.pb-2 {
+    padding-bottom: $space-base*20; //80
+}
+
+.ps-1 {
+    padding-left: $space-base*3; //12
+}
+
+@include pad {
+
+    @each $key,
+    $value in $mb-md-space {
+        .mb-md-#{$key} {
+            margin-bottom: $value;
+        }
+    }
+
+
+
+    .ms-md-1 {
+        margin-left: $space-base*4; //16
+    }
+
+    .m-md-0 {
+        margin: 0;
+    }
+
+    .py-md-1 {
+        padding-top: $space-base*4; //16
+        padding-bottom: $space-base*4; //16
+    }
+
+    .py-md-2 {
+        padding-top: $space-base*20; //80
+        padding-bottom: $space-base*20; //80
+    }
+
+    .pt-md-1 {
+        padding-top: $space-base*2; //8
+    }
+
+
+    .pb-md-2 {
+        padding-bottom: $space-base*10; //40
+    }
+
+    .pb-md-1 {
+        padding-bottom: $space-base*20; //80
+    }
+}
+
+@include mobile {
+
+    @each $key,
+    $value in $mb-sm-space {
+        .mb-sm-#{$key} {
+            margin-bottom: $value;
+        }
+    }
+
+    .ms-sm-1 {
+        margin-left: $space-base*2; //8
+    }
+
+    .m-sm-0 {
+        margin: 0;
+    }
+
+    .py-sm-1 {
+        padding-top: $space-base*6; //24
+        padding-bottom: $space-base*6; //24
+    }
+
+    .py-sm-2 {
+        padding-top: $space-base*10; //40
+        padding-bottom: $space-base*10; //40
+    }
+
+    .pt-sm-1 {
+        padding-top: $space-base*4; //16
+    }
+
+
+    .pt-sm-2 {
+        padding-top: $space-base*10; //40
+    }
+
+    .pb-sm-1 {
+        padding-bottom: $space-base*16; //64
+    }
+}
+
+.mx-auto {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.link {
+    &-color {
+
+        &:hover {
+            color: $primary;
+        }
+    }
+
+    &-border {
+        border-bottom: 2px solid transparent;
+
+        &:hover {
+            border-color: $white;
+        }
+    }
+}
+
+.shadow {
+    box-shadow: 0px 0px 6px $gray;
+}
+
+
+.w-50 {
+    width: 50%;
+}
+
+.w-65 {
+    width: 65%;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+@include pad {
+    .w-md-100 {
+        width: 100%;
+    }
+}
+
+.border {
+    border: 1px solid transparent;
+
+    &-start {
+        border-left: 1px solid transparent;
+    }
+
+    &-bottom {
+        border-bottom: 1px solid #000;
+    }
+
+    &-1 {
+        border-width: 1px;
+    }
+
+    &-2 {
+        border-width: 8px;
+    }
+
+    &-primary {
+        border-color: $primary;
+    }
+
+    &-gray {
+        border-color: $gray500;
+    }
+
+    &-light {
+        border-color: $light;
+    }
+}
+
+.white-space {
+    white-space: nowrap;
+}

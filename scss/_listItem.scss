@@ -1,0 +1,7 @@
+.list {
+    @include margin-space(-12px);
+
+    &-itemEven {
+        @include padding-space(12px);
+    }
+}

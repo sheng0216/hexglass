@@ -1,0 +1,82 @@
+.optical {
+
+    &-banner {
+        background: url(../../img/product-header-1.png) no-repeat, url(../../img/product-header-2.png) no-repeat;
+        height: 296px;
+        @include banner-size(50%, 100%, 50%, 100%);
+        // background-size: 50% 100%, 50% 100%;
+        @include banner-pos(left, top, right, top);
+        // background-position: left top, right top;
+    }
+
+    &-hero {
+        background: url(../../img/product-header-3.png) no-repeat, url(../../img/product-header-4.png) no-repeat;
+        height: 296px;
+        @include banner-size(50%, 100%, 50%, 100%);
+        // background-size: 50% 100%, 50% 100%;
+        @include banner-pos(left, top, right, top);
+        // background-position: left top, right top;
+    }
+
+    @include mobile {
+
+        &-banner,
+        &-hero {
+            height: 136px;
+        }
+    }
+}
+
+.product {
+    &-border {
+        border: 1px solid $gray200;
+    }
+
+    &-link {
+        border-bottom: 8px solid transparent;
+
+        &:focus {
+            border-color: $primary;
+        }
+    }
+
+    display: flex;
+    flex-wrap: wrap;
+    @include margin-space(-12px);
+
+    &-itemEven {
+        max-width: 25%;
+        @include padding-space(12px);
+    }
+
+    &-itemOdd {
+        max-width: 33.33333%;
+        @include padding-space(12px);
+    }
+
+    &-brown {
+        display: inline-block;
+        background: $brown;
+        padding: 12px;
+        border-radius: 4px;
+    }
+
+    &-buff {
+        display: inline-block;
+        background: $buff;
+        padding: 12px;
+        border-radius: 4px;
+    }
+
+    @include pad {
+        &-itemEven {
+            max-width: 50%;
+        }
+    }
+
+    @include mobile {
+        &-itemEven {
+            max-width: 100%;
+        }
+    }
+}
