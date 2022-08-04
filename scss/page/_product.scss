@@ -68,10 +68,18 @@
         &-itemEven {
             max-width: 50%;
         }
+
+        &-itemOdd {
+            max-width: 50%;
+        }
     }
 
     @include mobile {
         &-itemEven {
+            max-width: 100%;
+        }
+
+        &-itemOdd {
             max-width: 100%;
         }
     }

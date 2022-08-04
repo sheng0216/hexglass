@@ -323,6 +323,10 @@ $value in $ms-space {
     &-light {
         border-color: $light;
     }
+
+    &-white {
+        border-color: $white;
+    }
 }
 
 .white-space {

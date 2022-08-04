@@ -703,6 +703,10 @@ textarea.form-control {
   border-color: #707070;
 }
 
+.border-white {
+  border-color: #fff;
+}
+
 .white-space {
   white-space: nowrap;
 }
@@ -848,6 +852,53 @@ textarea.form-control {
   }
 }
 
+.gap-column-1 {
+  gap: 48px 0px;
+}
+
+.gap-column-2 {
+  gap: 60px 0px;
+}
+
+.gap-column-3 {
+  gap: 80px 0px;
+}
+
+@media (max-width: 992px) {
+  .gap-md-column-1 {
+    gap: 24px 0px;
+  }
+  .gap-md-column-2 {
+    gap: 40px 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  .gap-sm-column-1 {
+    gap: 16px 0px;
+  }
+  .gap-sm-column-2 {
+    gap: 24px 0px;
+  }
+}
+
+/*
+pc
+80
+48
+60
+
+md
+24
+40
+
+sm
+16
+24
+
+
+
+*/
 .list {
   margin-right: -12px;
   margin-left: -12px;
@@ -917,6 +968,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -968,7 +1021,7 @@ body {
   transition: 0.5s ease-in-out;
 }
 
-.nav-menu:hover {
+.nav-menu.active {
   border-color: #fff;
   border-radius: 4px;
   -webkit-transform: rotate(360deg);
@@ -977,23 +1030,38 @@ body {
 
 @media (max-width: 768px) {
   .nav-list {
-    display: none;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 100%;
+    position: absolute;
+    top: 74px;
+    right: 0;
+    left: 0;
+    max-height: 0px;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+    overflow: hidden;
+  }
+  .nav-list.active {
+    max-height: 216px;
+  }
+  .nav-item {
+    width: 100%;
+    margin: 0;
+  }
+  .nav-link {
+    background: #AA0601;
+    border: none;
+  }
+  .nav-link:hover {
+    border: none;
+    background: #650300;
   }
   .nav-menu {
     display: block;
-  }
-}
-
-.footer-border {
-  border-bottom: 1px solid #fff;
-  margin-top: 32px;
-  margin-bottom: 32px;
-}
-
-@media (max-width: 768px) {
-  .footer-border {
-    margin-top: 24px;
-    margin-bottom: 16px;
   }
 }
 
@@ -1215,10 +1283,16 @@ body {
   .product-itemEven {
     max-width: 50%;
   }
+  .product-itemOdd {
+    max-width: 50%;
+  }
 }
 
 @media (max-width: 768px) {
   .product-itemEven {
+    max-width: 100%;
+  }
+  .product-itemOdd {
     max-width: 100%;
   }
 }

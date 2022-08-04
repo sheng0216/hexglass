@@ -1,5 +1,6 @@
 .nav {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding-top: 12px;
@@ -40,7 +41,7 @@
         border: 2px solid transparent;
         transition: 0.5s ease-in-out;
 
-        &:hover {
+        &.active {
             border-color: $white;
             border-radius: 4px;
             transform: rotate(360deg)
@@ -51,22 +52,40 @@
 @include mobile {
     .nav {
         &-list {
-            display: none;
+            flex-wrap: wrap;
+            order: 1;
+            width: 100%;
+            position: absolute;
+            top: 74px;
+            right: 0;
+            left: 0;
+            max-height: 0px;
+            transition: all 0.8s;
+            overflow: hidden;
+
+            &.active {
+                max-height: 216px;
+            }
+        }
+
+        &-item {
+            width: 100%;
+            margin: 0;
+        }
+
+        &-link {
+            background: $secondary;
+            border: none;
+            // border-bottom: 3px solid transparent;
+
+            &:hover {
+                border: none;
+                background: $primary;
+            }
         }
 
         &-menu {
             display: block;
         }
-    }
-}
-
-.footer-border {
-    border-bottom: 1px solid $white;
-    margin-top: 32px;
-    margin-bottom: 32px;
-
-    @include mobile {
-        margin-top: 24px;
-        margin-bottom: 16px;
     }
 }

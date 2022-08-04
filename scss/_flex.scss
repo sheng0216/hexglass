@@ -58,6 +58,8 @@
     align-items: stretch;
 }
 
+
+
 @include pad {
     .flex-md-column {
         flex-direction: column;
@@ -105,3 +107,55 @@
         align-items: flex-start;
     }
 }
+
+.gap {
+    &-column-1 {
+        gap: 48px 0px;
+    }
+
+    &-column-2 {
+        gap: 60px 0px;
+    }
+
+    &-column-3 {
+        gap: 80px 0px;
+    }
+
+    @include pad {
+        &-md-column-1 {
+            gap: 24px 0px;
+        }
+
+        &-md-column-2 {
+            gap: 40px 0px;
+        }
+    }
+
+    @include mobile {
+        &-sm-column-1 {
+            gap: 16px 0px;
+        }
+
+        &-sm-column-2 {
+            gap: 24px 0px;
+        }
+    }
+}
+
+/*
+pc
+80
+48
+60
+
+md
+24
+40
+
+sm
+16
+24
+
+
+
+*/
